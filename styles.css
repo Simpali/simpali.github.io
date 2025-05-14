@@ -46,12 +46,33 @@ body {
     z-index: 100;
 }
 
-.logo {
-    font-size: 1.5rem;
+.logo, .footer-logo {
+    font-size: 2.2rem;
     font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.logo {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.footer-logo {
+    margin: 0 auto;
+}
+
+.home-link {
+    text-decoration: none;
     background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    display: inline-block;
 }
 
 .nav-links a {
@@ -288,6 +309,11 @@ footer {
 
     .feature-grid {
         grid-template-columns: 1fr;
+    }
+
+    .logo, .footer-logo {
+        justify-content: center;
+        font-size: 1.7rem;
     }
 }
 
